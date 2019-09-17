@@ -113,7 +113,7 @@
                 dataType: 'json',
                 success: function (data) {
                     var post = data.shift();
-                    console.log('initialize ok ' + post);
+                    console.log('initialize ok');
                     $('.quote-content').html(post.content.rendered).fadeIn(1000);
                     $('.person').text(post.title.rendered).fadeIn(1500);
                 },
@@ -168,8 +168,6 @@
                 });
             });
         });
-
-
 
     </script>
 
