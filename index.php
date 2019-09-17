@@ -113,8 +113,7 @@
                 dataType: 'json',
                 success: function (data) {
                     var post = data.shift();
-                    console.log(post);
-                    alert('asd');
+                    console.log('initialize ok ' + post);
                     $('.quote-content').html(post.content.rendered).fadeIn(1000);
                     $('.person').text(post.title.rendered).fadeIn(1500);
                 },
