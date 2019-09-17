@@ -119,7 +119,7 @@
                     $('.person').text(post.title.rendered).fadeIn(1500);
                 },
                 error: function() {
-                    alert('ERROR');
+                    console.log('ERROR initialize');
                 }
             });
         };
@@ -146,7 +146,7 @@
 
                     },
                     error: function() {
-                        alert('ERROR');
+                        console.log('ERROR quotesondesign');
                     },
                     cache: false
                 });
@@ -164,7 +164,7 @@
                         $('#bg-image').hide().css('background', 'url(' + photo.urls.regular + ')').fadeIn(1500);
                     },
                     error: function() {
-                        alert('ERROR');
+                        console.log('ERROR unsplash');
                     }
                 });
             });
